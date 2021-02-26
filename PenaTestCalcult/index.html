@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <title>Title</title>
+    <link href="app.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="page">
+<div class="wrapper-row">
+    <div class="calculator">
+        <div class="calculator-wrapper">
+            <input  id="pole"  type="text">
+
+            <button onclick="insert('*')"   class="logic">&times;</button>
+            <button onclick="insert('%')"   class="logic">&divide;</button>
+            <button onclick="operation('sqr')"  class="logic">^2</button>
+            <button onclick="clean()"       class="logic">C</button>
+
+            <button onclick="insert('1')"   class="calculator-item">1</button>
+            <button onclick="insert('2')"   class="calculator-item">2</button>
+            <button onclick="insert('3')"   class="calculator-item">3</button>
+            <button onclick="operation('sqrt')" class="logic">&radic;</button>
+
+            <button onclick="insert('4')" class="calculator-item">4</button>
+            <button onclick="insert('5')" class="calculator-item">5</button>
+            <button onclick="insert('6')" class="calculator-item">6</button>
+            <button onclick="insert('+')" class="logic">+</button>
+
+            <button onclick="insert('7')" class="calculator-item">7</button>
+            <button onclick="insert('8')" class="calculator-item">8</button>
+            <button onclick="insert('9')" class="calculator-item">9</button>
+            <button onclick="insert('-')" class="logic">-</button>
+
+            <button onclick="insert('0')" class="calculator-item">0</button>
+            <button onclick="insert('.')" class="calculator-item">.</button>
+            <button onclick="result()"    class="result">=</button>
+            <button onclick="insert('/')" class="logic">/</button>
+
+
+        </div>
+    </div>
+    <div  class="logs" id="logs">
+        <span id="info"></span>
+    </div>
+</div>
+</div>
+
+<script src="js.js"></script>
+</body>
+</html>
