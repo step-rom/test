@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <title>Title</title>
+    <link href="app.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="page">
+    <div class="wrapper-row">
+        <div class="calculator">
+            <div class="calculator-wrapper">
+                <input id="pole" type="text">
+
+                <button value="*" class="logic">&times;</button>
+                <button value="%" class="logic">&divide;</button>
+                <button onclick="operation('pow')"  class="logic">^2</button>
+                <button onclick="reset()" class="logic">C</button>
+
+                <button value="1" class="calculator-item">1</button>
+                <button value="2" class="calculator-item">2</button>
+                <button value="3" class="calculator-item">3</button>
+                <button onclick="operation('sqrt')" class="logic">&radic;</button>
+
+                <button value="4" class="calculator-item">4</button>
+                <button value="5" class="calculator-item">5</button>
+                <button value="6" class="calculator-item">6</button>
+                <button value="+" class="logic">+</button>
+
+                <button value="7" class="calculator-item">7</button>
+                <button value="8" class="calculator-item">8</button>
+                <button value="9" class="calculator-item">9</button>
+                <button value="-" class="logic">-</button>
+
+                <button value="0" class="calculator-item">0</button>
+                <button value="." class="calculator-item">.</button>
+                <button onclick="result()" class="result">=</button>
+                <button value="/" class="logic">/</button>
+
+
+            </div>
+        </div>
+        <div class="logs" id="logs">
+            <span id="info"></span>
+        </div>
+    </div>
+</div>
+
+<script src="js.js"></script>
+</body>
+</html>
